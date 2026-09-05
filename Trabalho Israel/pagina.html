@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="EduardoVeiculos" content="Loja de Carros">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDUARDO VEICULOS!</title>
+
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Full-width input fields */
+      input[type=text],
+      input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+
+      /* Set a style for all buttons */
+      button {
+        background-color: #04AA6D;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+
+      /* Extra styles for the cancel button */
+      .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+      }
+
+      /* Center the image and position the close button */
+      .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+        position: relative;
+      }
+
+      img.avatar {
+        width: 40%;
+        border-radius: 50%;
+      }
+
+      .container {
+        padding: 16px;
+      }
+
+      span.psw {
+        float: right;
+        padding-top: 16px;
+      }
+
+      /* The Modal (background) */
+      .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+        padding-top: 60px;
+      }
+
+      /* Modal Content/Box */
+      .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto;
+        /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 80%;
+        /* Could be more or less, depending on screen size */
+      }
+
+      /* The Close Button (x) */
+      .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: red;
+        cursor: pointer;
+      }
+
+      /* Add Zoom Animation */
+      .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+      }
+
+      @-webkit-keyframes animatezoom {
+        from {
+          -webkit-transform: scale(0)
+        }
+
+        to {
+          -webkit-transform: scale(1)
+        }
+      }
+
+      @keyframes animatezoom {
+        from {
+          transform: scale(0)
+        }
+
+        to {
+          transform: scale(1)
+        }
+      }
+
+      /* Change styles for span and cancel button on extra small screens */
+      @media screen and (max-width: 300px) {
+        span.psw {
+          display: block;
+          float: none;
+        }
+
+        .cancelbtn {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <h2>Faça seu login clicando no botão abaixo</h2>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+    <div id="id01" class="modal">
+
+      <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+          <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Usuario</b></label>
+          <input type="text" placeholder="Digite seu usuario" name="uname" required>
+
+          <label for="psw"><b>Senha</b></label>
+          <input type="password" placeholder="Digite sua senha" name="psw" required>
+
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="Recuperar"> Recuperar senha
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn">Cancelar</button>
+          <span class="psw">Esqueceu a <a href="#">senha?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+
+  </body>
+
+  </html>
+
+
+  <ins> COMPRE SEU CARRO AQUI E AGORA </ins>
+  <p></p>
+  <img src="https://i.pinimg.com/originals/52/eb/52/52eb52f4aba6288f81f826bc16e95a48.jpg" alt="Logo da UNIPE"
+    width="800" height="300">
+  <p>🚗 Chegou a hora de conquistar o seu carro novo com total segurança e economia!Cansado de perder tempo com
+    transporte público ou de gastar dinheiro com consertos constantes no seu carro antigo? Na Israel Veiculos, nós
+    transformamos o seu sonho da chave na mão em realidade de forma rápida, transparente e sem burocracia.O que você
+    encontra aqui:Frota Revisada e Garantida: Veículos periciados, higienizados e com procedência comprovada para
+    você rodar sem preocupações.Condições que Cabem no Bolso: Taxas de financiamento especiais, parcelas que se
+    ajustam ao seu orçamento e facilidade na aprovação de crédito.Aprovação Rápida: Analisamos sua ficha na hora
+    pelo WhatsApp ou diretamente em nossa loja.Melhor Avaliação do Usado: Pegamos o seu seminovo na troca com uma
+    avaliação justa e honesta.Oferta Especial da Semana🔥 [HB20S 1.6 Automatico] – [2019], IPVA grátis, tanque cheio
+    ou com 1ª parcela para daqui a 60 dias] Por apenas: "Consulte condições" Venha tomar um café conosco!Não deixe
+    para depois o conforto e a liberdade que você e sua família merecem.📍 Endereço: [UNIPE]📞 Telefone/WhatsApp:
+    [4002-8922]🌐 Instagram/Site: [@unipe](Clique no link do nosso perfil ou mande um "EU QUERO" no WhatsApp para
+    falar agora mesmo com um de nossos consultores!)</p>
+  <a href="www.google.com.br">Whatsapp do consultor de vendas </a>
+  <h1>CARROS</h1>
+  <h3> <ins>HB20S</ins> R$70.000 <a href="hb20.html">Clique aqui para ver mais detalhes</a></H1>
+    <h3> <ins>CRETA</ins> R$90.000 <a href="creta.html">Clique aqui para ver mais detalhes</a></H1>
+      <h3> <ins>COROLLA</ins> R$90.000 <a href="corolla.html">Clique aqui para ver mais detalhes</a></H1>
+        <h3> <ins>ARGO</ins> R$50.000 <a href="argo.html">Clique aqui para ver mais detalhes</a></H1>
+          <h3> <ins>FUSCA</ins> R$30.000 <a href="fusca.html">Clique aqui para ver mais detalhes</a></H1>
+            <h3><ins>SIENA</ins> R$50.000 <a href="siena.html">Clique aqui para ver mais detalhes</a></H1>
+              <h1>MOTOS <INS>
+                  <h6>TITAN 160 R$15.000 <INS></INS> <a href="titan160.html">Clique aqui para ver mais detalhes</a></H2>
+
+            </H3>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4M6rrFJyCCM?si=xDL35tcfitzuHivZ"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFgsH45HXmkppPCJE4qn3Rmpe_Dh0pDXZ33wWe79LBH4WpOI3zXzhL6WI&s=10"
+              alt="">
+            <!DOCTYPE html><br>
+            <br>
+            <br>
+
+            <a href="questionario.html">Clique aqui para responder nosso questionario</a>
